@@ -1,20 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, SafeAreaView, ScrollView } from 'react-native';
+import BoxModelObjectScreen from './src/screens/BoxModelObjectScreen';
+import PositionModelScreen from './src/screens/PositionModelScreen';
+import FlexBoxScreen from './src/screens/FlexBoxScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <>
+            <FlexBoxScreen></FlexBoxScreen>
+    </>
+
+
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+/**
+ * 
+ * 
+ * 
+ *     <SafeAreaView>
+      <StatusBar style='dark' />
+      <ScrollView>
+        {/* <BoxModelObjectScreen></BoxModelObjectScreen>
+        <PositionModelScreen></PositionModelScreen> */
+        //  </ScrollView>
+
+   // </SafeAreaView> //
